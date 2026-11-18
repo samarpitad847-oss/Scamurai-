@@ -1,0 +1,21 @@
+{
+  "name": "scamurai-clickwise",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "tsx server.ts",
+    "preview": "vite preview",
+    "dev:backend": "tsx server.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "tsx": "^4.21.0",
+    "vite": "^8.3.0"
+  }
+}

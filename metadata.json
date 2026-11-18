@@ -1,0 +1,6 @@
+{
+  "name": "Scamurai — ClickWise",
+  "description": "Rule-based cybersecurity triage and scam awareness tool. Analyze suspicious messages, links, email attachments, and phone calls with clear red-flag explanations and safe next steps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

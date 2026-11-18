@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scamurai · Think Before You Click</title>
+    <meta
+      name="description"
+      content="Rule-based cybersecurity triage and scam awareness tool. Paste suspicious messages, links, or email text to see why they look risky and what to do next."
+    />
+    <meta property="og:title" content="Scamurai · Think Before You Click" />
+    <meta
+      property="og:description"
+      content="Spot red flags in SMS, WhatsApp forwards, URLs, and emails with clear explanations and safe next steps."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand-wordmark">Scamurai</a>
+        <span class="header-tagline">Think Before You Click</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section (Full Viewport) -->
+      <section id="top" class="hero-section">
+        <div class="container hero-main">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1 class="hero-brand">Scamurai</h1>
+              <p class="hero-headline">Spot the red flags before you click.</p>
+              <p class="hero-subtext">
+                Paste a suspicious message, link, or email text to see why it looks risky and what to do next.
+              </p>
+              <div class="hero-actions">
+                <button type="button" class="btn-primary js-scroll-btn" data-target="vectors">
+                  <span>Scroll to Check</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 5v14" />
+                    <path d="m19 12-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-graphic" aria-hidden="true">
+              <div class="reticle-wrap">
+                <svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg" class="reticle-svg">
+                  <defs>
+                    <radialGradient id="scamurai-glow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#19FF6E" stop-opacity="0.12" />
+                      <stop offset="65%" stop-color="#19FF6E" stop-opacity="0.02" />
+                      <stop offset="100%" stop-color="#19FF6E" stop-opacity="0" />
+                    </radialGradient>
+                  </defs>
+                  <circle cx="180" cy="180" r="155" fill="url(#scamurai-glow)" />
+                  <circle cx="180" cy="180" r="138" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4 8" />
+                  <circle class="reticle-spin" cx="180" cy="180" r="112" stroke="rgba(25,255,110,0.22)" stroke-width="1.25" stroke-dasharray="56 22 14 48" />
+                  <path d="M180 96L240 122V176C240 217 214.5 249 180 264C145.5 249 120 217 120 176V122L180 96Z" fill="#0B0E0D" stroke="rgba(255,255,255,0.16)" stroke-width="1.5" />
+                  <path d="M134 222L226 130" stroke="#19FF6E" stroke-width="2.25" stroke-linecap="round" />
+                  <circle cx="180" cy="176" r="5" fill="#19FF6E" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero-cue-wrap">
+          <button type="button" class="scroll-cue js-scroll-btn" data-target="vectors">
+            <span>Scroll down for options</span>
+            <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14" />
+              <path d="m19 12-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- 4 Scroll-Revealed Option Boxes -->
+      <section id="vectors" class="vectors-section">
+        <div class="container">
+          <div class="section-intro reveal">
+            <h2 class="section-title">Choose an option</h2>
+            <p class="section-subtitle">Select any box to jump right down to its section.</p>
+          </div>
+
+          <div class="boxes-grid">
+            <!-- Box 1: Messages -->
+            <button type="button" class="vector-box reveal js-scroll-btn" data-target="section-messages" data-focus="input-messages">
+              <div>
+                <div class="box-top">
+                  <div class="box-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M4 6.5C4 5.11929 5.11929 4 6.5 4H17.5C18.8807 4 20 5.11929 20 6.5V14.5C20 15.8807 18.8807 17 17.5 17H9L4.5 20.5V17H6.5C5.11929 17 4 15.8807 4 14.5V6.5Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+                      <path d="M8.5 9.25H15.5" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                      <path d="M8.5 12.5H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <span class="box-sub">WhatsApp &amp; SMS</span>
+                </div>
+                <h3 class="box-title">Messages</h3>
+                <p class="box-desc">Check suspicious texts, forwarded chats, OTP requests, and urgent fee alerts.</p>
+              </div>
+              <div class="box-footer">
+                <span class="box-action">
+                  <span>Inspect Messages</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 5v14" />
+                    <path d="m19 12-7 7-7-7" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+
+            <!-- Box 2: URLs & Links -->
+            <button type="button" class="vector-box reveal js-scroll-btn" data-target="section-urls" data-focus="input-urls">
+              <div>
+                <div class="box-top">
+                  <div class="box-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M10.5 13.5L13.5 10.5" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                      <path d="M14.5 14.5L16.75 12.25C18.1307 10.8693 18.1307 8.63071 16.75 7.25C15.3693 5.86929 13.1307 5.86929 11.75 7.25L9.5 9.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                      <path d="M9.5 9.5L7.25 11.75C5.86929 13.1307 5.86929 15.3693 7.25 16.75C8.63071 18.1307 10.8693 18.1307 12.25 16.75L14.5 14.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                      <circle cx="18.5" cy="5.5" r="1.5" fill="#19FF6E" />
+                    </svg>
+                  </div>
+                  <span class="box-sub">Links &amp; Shorteners</span>
+                </div>
+                <h3 class="box-title">URLs &amp; Links</h3>
+                <p class="box-desc">Spot lookalike domains, shortened links, and fake login addresses before clicking.</p>
+              </div>
+              <div class="box-footer">
+                <span class="box-action">
+                  <span>Inspect URLs</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 5v14" />
+                    <path d="m19 12-7 7-7-7" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+
+            <!-- Box 3: Emails & Attachments (Text / Filename Paste) -->
+            <button type="button" class="vector-box reveal js-scroll-btn" data-target="section-attachments" data-focus="input-attachments">
+              <div>
+                <div class="box-top">
+                  <div class="box-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M7 3.75H13.75L18.25 8.25V18.75C18.25 19.5784 17.5784 20.25 16.75 20.25H7C6.17157 20.25 5.5 19.5784 5.5 18.75V5.25C5.5 4.42157 6.17157 3.75 7 3.75Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+                      <path d="M13.5 3.75V8.5H18.25" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+                      <path d="M11.875 11.5V14.75" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                      <circle cx="11.875" cy="17.1" r="0.9" fill="#19FF6E" />
+                    </svg>
+                  </div>
+                  <span class="box-sub">Emails &amp; Filenames</span>
+                </div>
+                <h3 class="box-title">Email Attachments</h3>
+                <p class="box-desc">Paste suspicious email text or attachment filenames to spot disguised extensions and macro lures.</p>
+              </div>
+              <div class="box-footer">
+                <span class="box-action">
+                  <span>Inspect Emails</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 5v14" />
+                    <path d="m19 12-7 7-7-7" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+
+            <!-- Box 4: Awareness Quiz -->
+            <button type="button" class="vector-box reveal js-scroll-btn" data-target="section-quiz">
+              <div>
+                <div class="box-top">
+                  <div class="box-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <rect x="4" y="4" width="16" height="16" rx="3.5" stroke="currentColor" stroke-width="1.75" />
+                      <path d="M9.75 9.5C9.75 8.35 10.65 7.5 12 7.5C13.35 7.5 14.25 8.35 14.25 9.5C14.25 10.55 13.5 11.15 12.55 11.65C12.1 11.9 12 12.2 12 12.85V13.4" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                      <circle cx="12" cy="16.25" r="0.95" fill="#19FF6E" />
+                    </svg>
+                  </div>
+                  <span class="box-sub">6 Quick Scenarios</span>
+                </div>
+                <h3 class="box-title">Awareness Quiz</h3>
+                <p class="box-desc">Practice spotting urgent texts, fake domains, and disguised attachments.</p>
+              </div>
+              <div class="box-footer">
+                <span class="box-action">
+                  <span>Start Quiz</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 5v14" />
+                    <path d="m19 12-7 7-7-7" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: Messages Analyzer -->
+      <section id="section-messages" class="analyzer-section">
+        <div class="container-narrow">
+          <div class="section-header-row">
+            <div class="section-heading-group">
+              <div class="section-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6.5C4 5.11929 5.11929 4 6.5 4H17.5C18.8807 4 20 5.11929 20 6.5V14.5C20 15.8807 18.8807 17 17.5 17H9L4.5 20.5V17H6.5C5.11929 17 4 15.8807 4 14.5V6.5Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+                  <path d="M8.5 9.25H15.5" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                  <path d="M8.5 12.5H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="section-name">Messages</h3>
+                <p class="section-meta">WhatsApp &amp; SMS</p>
+              </div>
+            </div>
+            <div class="section-header-actions">
+              <button type="button" class="btn-refresh hidden js-refresh-btn" data-vector="messages">Refresh</button>
+              <button type="button" class="btn-up js-scroll-btn" data-target="vectors">↑ Options</button>
+            </div>
+          </div>
+
+          <div class="workspace-panel" data-panel="messages">
+            <div class="js-input-view">
+              <p class="prompt-lead">Paste any SMS, WhatsApp forward, or direct message below to check for red flags and safe next steps.</p>
+              <form class="composer-form js-analyze-form" data-vector="messages">
+                <div class="composer-box">
+                  <textarea
+                    id="input-messages"
+                    rows="3"
+                    placeholder="Paste a suspicious SMS, WhatsApp forward, or DM..."
+                    aria-label="Paste suspicious message"
+                  ></textarea>
+                  <button type="submit" class="btn-analyze" disabled>
+                    <span>Analyze</span>
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m5 12 7-7 7 7" />
+                      <path d="M12 19V5" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="js-result-view hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: URLs Analyzer -->
+      <section id="section-urls" class="analyzer-section">
+        <div class="container-narrow">
+          <div class="section-header-row">
+            <div class="section-heading-group">
+              <div class="section-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M10.5 13.5L13.5 10.5" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                  <path d="M14.5 14.5L16.75 12.25C18.1307 10.8693 18.1307 8.63071 16.75 7.25C15.3693 5.86929 13.1307 5.86929 11.75 7.25L9.5 9.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                  <path d="M9.5 9.5L7.25 11.75C5.86929 13.1307 5.86929 15.3693 7.25 16.75C8.63071 18.1307 10.8693 18.1307 12.25 16.75L14.5 14.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                  <circle cx="18.5" cy="5.5" r="1.5" fill="#19FF6E" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="section-name">URLs &amp; Links</h3>
+                <p class="section-meta">Links &amp; Shorteners</p>
+              </div>
+            </div>
+            <div class="section-header-actions">
+              <button type="button" class="btn-refresh hidden js-refresh-btn" data-vector="urls">Refresh</button>
+              <button type="button" class="btn-up js-scroll-btn" data-target="vectors">↑ Options</button>
+            </div>
+          </div>
+
+          <div class="workspace-panel" data-panel="urls">
+            <div class="js-input-view">
+              <p class="prompt-lead">Paste any link, domain, or shortened URL below to check for brand spoofing, redirects, and risky login paths.</p>
+              <form class="composer-form js-analyze-form" data-vector="urls">
+                <div class="composer-box">
+                  <textarea
+                    id="input-urls"
+                    rows="3"
+                    placeholder="Paste a suspicious link or domain..."
+                    aria-label="Paste suspicious URL or domain"
+                  ></textarea>
+                  <button type="submit" class="btn-analyze" disabled>
+                    <span>Analyze</span>
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m5 12 7-7 7 7" />
+                      <path d="M12 19V5" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="js-result-view hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Email & Attachment Text Analyzer -->
+      <section id="section-attachments" class="analyzer-section">
+        <div class="container-narrow">
+          <div class="section-header-row">
+            <div class="section-heading-group">
+              <div class="section-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 3.75H13.75L18.25 8.25V18.75C18.25 19.5784 17.5784 20.25 16.75 20.25H7C6.17157 20.25 5.5 19.5784 5.5 18.75V5.25C5.5 4.42157 6.17157 3.75 7 3.75Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+                  <path d="M13.5 3.75V8.5H18.25" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+                  <path d="M11.875 11.5V14.75" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                  <circle cx="11.875" cy="17.1" r="0.9" fill="#19FF6E" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="section-name">Email Attachments</h3>
+                <p class="section-meta">Emails &amp; Filenames</p>
+              </div>
+            </div>
+            <div class="section-header-actions">
+              <button type="button" class="btn-refresh hidden js-refresh-btn" data-vector="attachments">Refresh</button>
+              <button type="button" class="btn-up js-scroll-btn" data-target="vectors">↑ Options</button>
+            </div>
+          </div>
+
+          <div class="workspace-panel" data-panel="attachments">
+            <div class="js-input-view">
+              <p class="prompt-lead">Paste the email text or attachment filename below (no file upload needed) to check for disguised extensions and macro lures.</p>
+              <form class="composer-form js-analyze-form" data-vector="attachments">
+                <div class="composer-box">
+                  <textarea
+                    id="input-attachments"
+                    rows="3"
+                    placeholder="Paste the email text or attachment filename..."
+                    aria-label="Paste email text or attachment filename"
+                  ></textarea>
+                  <button type="submit" class="btn-analyze" disabled>
+                    <span>Analyze</span>
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m5 12 7-7 7 7" />
+                      <path d="M12 19V5" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="js-result-view hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Awareness Quiz -->
+      <section id="section-quiz" class="analyzer-section">
+        <div class="container-narrow">
+          <div class="section-header-row">
+            <div class="section-heading-group">
+              <div class="section-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="3.5" stroke="currentColor" stroke-width="1.75" />
+                  <path d="M9.75 9.5C9.75 8.35 10.65 7.5 12 7.5C13.35 7.5 14.25 8.35 14.25 9.5C14.25 10.55 13.5 11.15 12.55 11.65C12.1 11.9 12 12.2 12 12.85V13.4" stroke="#19FF6E" stroke-width="1.75" stroke-linecap="round" />
+                  <circle cx="12" cy="16.25" r="0.95" fill="#19FF6E" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="section-name">Awareness Quiz</h3>
+                <p id="quiz-progress" class="section-meta">Question 1 of 6 · Score 0</p>
+              </div>
+            </div>
+            <button type="button" class="btn-up js-scroll-btn" data-target="vectors">↑ Options</button>
+          </div>
+
+          <div id="quiz-container" class="quiz-card"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-brand">Scamurai</span>
+        <span>Think Before You Click</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
